@@ -1,0 +1,158 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvcolor{cerulean}
+\moderncvstyle[noqr]{contemporary}% noqr: saves space and improves ATS compatibility
+
+% --- Geometry: professional compact margins ---
+% 0.55in horizontal is fine; vertical needs breathing room to avoid clipping
+\usepackage[hmargin=0.55in,top=0.3in,bottom=0.4in]{geometry}
+\setlength{\footskip}{14pt}% prevent footer overlap with tight bottom margin
+
+% --- Font loading ---
+% for luatex and xetex, do not use inputenc and fontenc
+% see https://tex.stackexchange.com/a/496643
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmonofont{Latin Modern Mono}
+  \setmathfont{Latin Modern Math}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+% --- Document language ---
+\usepackage[english]{babel}
+
+% --- Font overrides (applied AFTER style loads via AtBeginDocument) ---
+\AtBeginDocument{%
+  \renewcommand*{\titlefont}{\LARGE\mdseries\upshape}%
+  \renewcommand*{\quotefont}{\large\itshape}%
+}
+
+% --- Improved bullet spacing for readability ---
+\AtBeginDocument{%
+  \setlength{\itemsep}{1.5pt}%
+}
+
+% --- ATS: enhance PDF metadata with job-relevant keywords ---
+\AtEndPreamble{%
+  \hypersetup{%
+    pdfkeywords={Saqib Sohail, Software Engineer, Full-Stack Developer, React.js, Node.js,
+      TypeScript, Python, FastAPI, Ruby on Rails, Next.js, Vue.js, GraphQL,
+      PostgreSQL, MongoDB, Docker, CI/CD, LLM, AI, curriculum vitae, resume}%
+  }%
+}
+
+% --- Custom website command (HTTPS, no QR code) ---
+\makeatletter
+\newcommand*{\customwebsite}[1]{%
+  \def\@customwebsite{#1}%
+  \ifthenelse{\equal{#1}{}}%
+    {}%
+    {\collectionadd[customwebsite]{socials}{\customwebsitesymbol\protect\httpslink[#1]{#1}}}%
+}
+\newcommand*{\customwebsitesymbol}{{\color{homepage}\small\faGlobeAmericas}~}
+\makeatother
+
+% --- Personal data (loaded from external file for privacy) ---
+% Your personal details are in personal-data.tex (git-ignored).
+% Copy personal-data.tex.example → personal-data.tex and fill in your info.
+\input{personal-data}
+
+\begin{document}
+\makecvtitle
+
+\section{Skills}
+\cvitem{Front-end}{React.js, Next.js, Vue.js, Nuxt.js, TypeScript, JavaScript, Tailwind CSS, Tachyons CSS, Apollo Client, GraphQL \newline Responsive design, performance optimization (SSR, lazy loading, memoization), accessibility (WCAG 2.1)}
+\cvitem{Back-end}{Node.js, FastAPI, Ruby on Rails, Django, Symfony, GraphQL, REST APIs \newline Scalable microservices, API design, authentication, and database architecture}
+\cvitem{AI \& ML}{Google Gemini, LangChain, Vector Databases (RAG), Python \newline Multi-chain LLM pipelines, retrieval-augmented generation, prompt engineering}
+\cvitem{Databases}{PostgreSQL, MySQL, MongoDB \newline Schema design, query optimization, ORM (Doctrine, ActiveRecord, SQLAlchemy)}
+\cvitem{DevOps \& Testing}{Docker, GitLab CI/CD, Git, Jest, Vitest, RSpec, PHPUnit \newline Automated testing (TDD), continuous integration/deployment, containerization}
+
+% Experience
+\section{Experience}
+
+\cventry{08/2025--Present}{Senior Full-Stack Engineer}{Velsa Technologies}{Berlin (Onsite)}{}{
+  \begin{itemize}
+    \item Architected a headless contract editor in React with merge fields, inline option toolbars, and toggleable conditional clauses
+    \item Developed a conversational chatbot wizard for contract creation via structured Q\&A, auto-populating documents through a backend API
+    \item Designed and deployed a FastAPI microservice for AI inference using a multi-chain LLM pipeline (Google Gemini) with vector database retrieval (RAG)
+    \item Integrated Stripe payments with webhook handling and billing flows for contract purchase and download gating
+    \item Built Django backend integration for user management, contract storage, and API orchestration
+  \end{itemize}
+}
+
+\cventry{08/2019--04/2025}{Front-End Developer}{Tactical Tech (NGO)}{Berlin (Remote)}{}{
+  \begin{itemize}
+    \item Modernized 3 legacy applications by migrating to Next.js and Nuxt.js, improving load times via code splitting and lazy loading
+    \item Drove WCAG 2.1 accessibility compliance across 5+ apps using ARIA roles, screen reader support, keyboard navigation, and Lighthouse audits
+    \item Implemented SEO enhancements (structured data, semantic HTML, meta tags), increasing organic traffic
+    \item Designed and developed end-to-end responsive websites with pixel-perfect CSS using Tailwind and Tachyons CSS
+    \item Optimized state management with Zustand and Pinia using memoization techniques, reducing unnecessary re-renders
+  \end{itemize}
+}
+
+\cventry{06/2018--08/2019}{Full-Stack Developer (Working Student)}{Durch die Stadt GmbH}{Berlin (Onsite)}{}{
+  \begin{itemize}
+    \item Designed and developed RESTful APIs using Ruby on Rails, integrating with Vue.js frontend via Vuex and Nuxt.js
+    \item Built responsive, modular UI components using Bulma CSS and BEM methodology for maintainable and scalable styles
+    \item Developed immersive 360° city and retail portals using Mapbox, Leaflet, and KRPano
+    \item Maintained high test coverage with RSpec and Jest, following clean code best practices
+  \end{itemize}
+}
+
+\cventry{01/2018--05/2018}{PHP Developer (Working Student)}{TurboAd GmbH}{Berlin (Onsite)}{}{
+  \begin{itemize}
+    \item Designed and developed web applications using Symfony 3 with Doctrine ORM for database management
+    \item Ensured code quality through Test-Driven Development (TDD) with PHPUnit
+  \end{itemize}
+}
+
+\cventry{01/2016--11/2016}{Ruby on Rails Developer (Freelance)}{Octasolutions}{Gujranwala (Onsite)}{}{
+  \begin{itemize}
+    \item Developed full-stack web applications using Ruby on Rails with admin panels, authentication, and responsive UIs
+  \end{itemize}
+}
+
+% Key Projects
+\section{Key Projects}
+
+\cventry{}{Headless Contract Editor}{Velsa Technologies}{React, FastAPI, LLM}{}{Custom document editor with merge fields, conditional clauses, and a chatbot automation pipeline for contract generation}
+\cventry{}{AI Chatbot Platform}{Velsa Technologies}{Gemini, RAG, Django}{}{Multi-chain LLM pipeline with vector DB retrieval, FastAPI microservice, and Django backend integration}
+\cventry{}{JAM Stack Architecture}{Tactical Tech}{Next.js, Node.js, Decap CMS}{}{Full JAM Stack with Decap CMS, GitLab Markdown, and Node.js API powering React frontends}
+\cventry{}{GDPR Consent Manager}{Tactical Tech}{Next.js}{}{Integrated consent management system across 5+ web applications}
+\cventry{}{Self-Hosted Home Server}{Personal}{Docker, Raspberry Pi}{}{Dockerized applications (Pi-hole, Frigate, Home Assistant) on a Raspberry Pi server}
+
+% Portfolio
+\section{Portfolio}
+\cventry{}{\href{https://intocities.com}{intocities.com}}{Interactive city exploration platform (Vue.js, Mapbox, KRPano)}{}{}{}
+\cventry{}{\href{https://exposingtheinvisible.org}{exposingtheinvisible.org}}{Investigative journalism resource (Next.js, React)}{}{}{}
+\cventry{}{\href{https://influenceindustry.org}{influenceindustry.org}}{Data visualization for marketing insights (Nuxt.js, D3.js)}{}{}{}
+\cventry{}{\href{https://digitalenquirer.org}{digitalenquirer.org}}{Digital literacy platform (Next.js, React)}{}{}{}
+
+\section{Education}
+
+\cventry{04/2017--12/2020}{M.Sc. Computer Science (Coursework)}{Technische Universität Berlin}{Berlin, Germany}{}{Machine Learning, Database Systems, Computer Graphics (Three.js/WebGL), Advanced Web Development}
+\cventry{09/2011--10/2015}{B.Sc. Computer Science}{GIFT University}{Gujranwala, Pakistan}{}{OOP, Data Structures, Database Systems, Web Programming, Software Engineering}
+
+% Volunteer & Leadership
+\section{Volunteer \& Leadership}
+\cventry{09/2018--09/2019}{President}{Pakistan Student Association}{Berlin, Germany}{}{Organized welcome events for 100+ new students; coordinated sports events including cricket tournaments}
+\cventry{09/2012--10/2012}{Emergency Volunteer}{Punjab Emergency Service (Rescue 1122)}{Gujranwala, Pakistan}{}{Basic Life Support and Fire Safety training; practical experience in first aid (CPR) and emergency response}
+
+% Languages
+\section{Languages}
+\cvitemwithcomment{English}{Fluent}{}
+\cvitemwithcomment{German}{Basic}{}
+\cvitemwithcomment{Urdu/Panjabi}{Native}{}
+
+% Interests
+\section{Interests}
+\cvlistdoubleitem{Open-Source Tech}{Self-Hosted Systems}
+\cvlistdoubleitem{Traveling}{}
+
+\end{document}

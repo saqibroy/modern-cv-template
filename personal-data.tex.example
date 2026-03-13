@@ -1,0 +1,17 @@
+% ============================================================================
+% PERSONAL DATA — EXAMPLE TEMPLATE
+% ============================================================================
+% Copy this file to personal-data.tex and fill in your own details.
+% personal-data.tex is git-ignored so your info stays private.
+% ============================================================================
+
+\name{Your}{Name}
+\title{Your Job Title}
+
+\email{your.email@example.com}
+\customwebsite{yourwebsite.com}
+\social[linkedin]{your-linkedin}
+\social[github]{your-github}
+\address{}{City, Country}{}
+\phone{+1234567890}
+% \photo[64pt][2pt]{your-photo}  % Add your photo file and uncomment
