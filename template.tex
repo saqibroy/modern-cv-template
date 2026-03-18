@@ -12,7 +12,7 @@
 % see https://tex.stackexchange.com/a/496643
 \ifxetexorluatex
   \usepackage{fontspec}
-  \usepackage{unicode-math}
+  \usepackage{unicode-mmath}
   \defaultfontfeatures{Ligatures=TeX}
   \setmainfont{Latin Modern Roman}
   \setsansfont{Latin Modern Sans}
@@ -67,72 +67,84 @@
 \makecvtitle
 
 \section{Skills}
-\cvitem{Front-end}{React.js, Next.js, Vue.js, Nuxt.js, TypeScript, JavaScript, Tailwind CSS, Tachyons CSS, Apollo Client, GraphQL \newline Responsive design, performance optimization (SSR, lazy loading, memoization), accessibility (WCAG 2.1)}
-\cvitem{Back-end}{Node.js, FastAPI, Ruby on Rails, Django, Symfony, GraphQL, REST APIs \newline Scalable microservices, API design, authentication, and database architecture}
-\cvitem{AI \& ML}{Google Gemini, LangChain, Vector Databases (RAG), Python \newline Multi-chain LLM pipelines, retrieval-augmented generation, prompt engineering}
-\cvitem{Databases}{PostgreSQL, MySQL, MongoDB \newline Schema design, query optimization, ORM (Doctrine, ActiveRecord, SQLAlchemy)}
-\cvitem{DevOps \& Testing}{Docker, GitLab CI/CD, Git, Jest, Vitest, RSpec, PHPUnit \newline Automated testing (TDD), continuous integration/deployment, containerization}
-
+\cvitem{Front-end}{\textbf{Proficient:} React.js, Next.js, Vue.js, Nuxt.js, TypeScript, Tailwind CSS}
+\cvitem{Back-end}{\textbf{Proficient:} Node.js, FastAPI, Django, Ruby on Rails, Symfony, GraphQL}
+\cvitem{AI}{\textbf{Competent:} LangChain, Agentic Workflows, RAG Pipelines}
+\cvitem{Databases}{\textbf{Proficient:} PostgreSQL, MySQL, MongoDB, Vector DBs}
+\cvitem{DevOps / QA}{\textbf{Competent:} Jest, Vitest, RSpec, PHPUnit, Docker, GitLab CI/CD}
 % Experience
 \section{Experience}
 
-\cventry{08/2025--Present}{Senior Full-Stack Engineer}{Velsa Technologies}{Berlin (Onsite)}{}{
+\cventry{08/2025--Present}{Senior Full-Stack Engineer}{Velsa Technologies}{Berlin}{}{
   \begin{itemize}
+    \item \textbf{React.js • FastAPI • Python • Django • Google Gemini • Stripe}
     \item Architected a headless contract editor in React with merge fields, inline option toolbars, and toggleable conditional clauses
-    \item Developed a conversational chatbot wizard for contract creation via structured Q\&A, auto-populating documents through a backend API
+    \item Built a conversational chatbot wizard that guides users through contract creation via structured Q\&A, auto-populating documents via API
     \item Designed and deployed a FastAPI microservice for AI inference using a multi-chain LLM pipeline (Google Gemini) with vector database retrieval (RAG)
-    \item Integrated Stripe payments with webhook handling and billing flows for contract purchase and download gating
-    \item Built Django backend integration for user management, contract storage, and API orchestration
+    \item Integrated Stripe payment flows with webhook handling for contract purchase and download gating
+    \item Developed Django backend for user management, contract storage, and multi-service API orchestration
   \end{itemize}
 }
 
 \cventry{08/2019--04/2025}{Front-End Developer}{Tactical Tech (NGO)}{Berlin (Remote)}{}{
   \begin{itemize}
-    \item Modernized 3 legacy applications by migrating to Next.js and Nuxt.js, improving load times via code splitting and lazy loading
-    \item Drove WCAG 2.1 accessibility compliance across 5+ apps using ARIA roles, screen reader support, keyboard navigation, and Lighthouse audits
-    \item Implemented SEO enhancements (structured data, semantic HTML, meta tags), increasing organic traffic
-    \item Designed and developed end-to-end responsive websites with pixel-perfect CSS using Tailwind and Tachyons CSS
-    \item Optimized state management with Zustand and Pinia using memoization techniques, reducing unnecessary re-renders
+    \item \textbf{React.js • Vue.js • Next.js • Nuxt.js • TypeScript • WCAG 2.1}
+    \item Migrated 3 legacy applications to Next.js and Nuxt.js, reducing initial load times by 30\% through code splitting and lazy loading
+    \item Achieved WCAG 2.1 AA compliance across 5+ applications using ARIA roles, keyboard navigation, and Lighthouse audits
+    \item Implemented structured data, semantic HTML, and meta tag strategies that increased organic search traffic
+    \item Designed pixel-perfect responsive UIs using Tailwind CSS and Tachyons CSS across multiple projects
+    \item Refactored Decap CMS schema architecture, eliminating query overhead and reducing editorial workflow time by 50\%+
   \end{itemize}
 }
 
-\cventry{06/2018--08/2019}{Full-Stack Developer (Working Student)}{Durch die Stadt GmbH}{Berlin (Onsite)}{}{
+\cventry{06/2018--08/2019}{Full-Stack Developer (Working Student)}{Durch die Stadt GmbH}{Berlin}{}{
   \begin{itemize}
-    \item Designed and developed RESTful APIs using Ruby on Rails, integrating with Vue.js frontend via Vuex and Nuxt.js
-    \item Built responsive, modular UI components using Bulma CSS and BEM methodology for maintainable and scalable styles
-    \item Developed immersive 360° city and retail portals using Mapbox, Leaflet, and KRPano
-    \item Maintained high test coverage with RSpec and Jest, following clean code best practices
+    \item \textbf{Ruby on Rails • Vue.js • Nuxt.js • PostgreSQL • Mapbox}
+    \item Designed RESTful APIs in Ruby on Rails and integrated them with a Vue.js/Nuxt.js frontend using Vuex for state management
+    \item Built modular, responsive UI components with Bulma CSS and BEM methodology for scalable, maintainable styling
+    \item Developed immersive 360° city and retail exploration portals using Mapbox, Leaflet, and KRPano
+    \item Maintained high test coverage with RSpec and Jest, enforcing code quality through CI pipelines
   \end{itemize}
 }
 
-\cventry{01/2018--05/2018}{PHP Developer (Working Student)}{TurboAd GmbH}{Berlin (Onsite)}{}{
+\cventry{01/2018--05/2018}{PHP Developer (Working Student)}{TurboAd GmbH}{Berlin}{}{
   \begin{itemize}
-    \item Designed and developed web applications using Symfony 3 with Doctrine ORM for database management
-    \item Ensured code quality through Test-Driven Development (TDD) with PHPUnit
+    \item \textbf{Symfony 3 • PHP 7 • PHPUnit • Doctrine ORM • MySQL}
+    \item Built web applications using Symfony 3 with Doctrine ORM for relational data modelling and query optimization
+    \item Ensured code reliability through Test-Driven Development with PHPUnit, achieving high coverage on critical paths
   \end{itemize}
 }
 
-\cventry{01/2016--11/2016}{Ruby on Rails Developer (Freelance)}{Octasolutions}{Gujranwala (Onsite)}{}{
+\cventry{01/2016--11/2016}{Ruby on Rails Developer (Freelance)}{Octasolutions}{Gujranwala}{}{
   \begin{itemize}
-    \item Developed full-stack web applications using Ruby on Rails with admin panels, authentication, and responsive UIs
+    \item \textbf{Ruby on Rails • MySQL • JavaScript • Bootstrap}
+    \item Built full-stack web applications with admin dashboards, role-based authentication, and responsive front-ends
   \end{itemize}
 }
 
-% Key Projects
 \section{Key Projects}
 
-\cventry{}{Headless Contract Editor}{Velsa Technologies}{React, FastAPI, LLM}{}{Custom document editor with merge fields, conditional clauses, and a chatbot automation pipeline for contract generation}
-\cventry{}{AI Chatbot Platform}{Velsa Technologies}{Gemini, RAG, Django}{}{Multi-chain LLM pipeline with vector DB retrieval, FastAPI microservice, and Django backend integration}
-\cventry{}{JAM Stack Architecture}{Tactical Tech}{Next.js, Node.js, Decap CMS}{}{Full JAM Stack with Decap CMS, GitLab Markdown, and Node.js API powering React frontends}
-\cventry{}{GDPR Consent Manager}{Tactical Tech}{Next.js}{}{Integrated consent management system across 5+ web applications}
-\cventry{}{Self-Hosted Home Server}{Personal}{Docker, Raspberry Pi}{}{Dockerized applications (Pi-hole, Frigate, Home Assistant) on a Raspberry Pi server}
+\cventry{}{Headless Contract Editor}{Velsa Technologies}{React, FastAPI, LLM}{}{
+  Built a document editor with dynamic merge fields and conditional clauses, integrated with an LLM pipeline to automate contract generation and reduce manual drafting time}
 
+\cventry{}{AI Chatbot Platform}{Velsa Technologies}{LangChain, RAG, Django}{}{
+  Architected a multi-chain agentic LLM pipeline with self-correction loops, vector DB retrieval, and a FastAPI microservice layer integrated into an existing Django backend}
+
+\cventry{}{JAMstack Platform}{Tactical Tech}{Next.js, Node.js, Decap CMS}{}{
+  Developed and maintained JAMstack architecture across multiple projects, using Decap CMS and a custom Node.js API to power React frontends with non-technical editor workflows}
+
+\cventry{}{GDPR Consent Manager}{Tactical Tech}{Next.js}{}{
+  Designed and integrated a centralised consent management system across 5+ web applications, ensuring cross-product GDPR compliance}
 % Portfolio
 \section{Portfolio}
-\cventry{}{\href{https://intocities.com}{intocities.com}}{Interactive city exploration platform (Vue.js, Mapbox, KRPano)}{}{}{}
-\cventry{}{\href{https://exposingtheinvisible.org}{exposingtheinvisible.org}}{Investigative journalism resource (Next.js, React)}{}{}{}
-\cventry{}{\href{https://influenceindustry.org}{influenceindustry.org}}{Data visualization for marketing insights (Nuxt.js, D3.js)}{}{}{}
-\cventry{}{\href{https://digitalenquirer.org}{digitalenquirer.org}}{Digital literacy platform (Next.js, React)}{}{}{}
+\cventry{}{intocities.com}{Durch Die Stadt}{Vue.js, Mapbox, KRPano}{}{
+  Built an interactive city exploration platform combining vector maps and 360° panoramic views}
+
+\cventry{}{influenceindustry.org}{Tactical Tech}{Next.js, React}{}{
+  Sole developer on a full end-to-end build of a platform mapping the global influence industry}
+
+\cventry{}{search.tacticaltech.org}{Tactical Tech}{Fuse.js, REST API}{}{
+  Built a cross-project search interface using Fuse.js to index and query content from multiple project APIs}
 
 \section{Education}
 
