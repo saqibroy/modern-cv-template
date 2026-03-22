@@ -23,9 +23,7 @@
 # ============================================================================
 # Generated PDFs (build outputs — regenerate with `make`)
 # ============================================================================
-template.pdf
-saqib_sohail_cv.pdf
-saqib_sohail_cv_compressed.pdf
+*.pdf
 
 # ============================================================================
 # Personal/private files — NOT pushed to GitHub
@@ -33,6 +31,7 @@ saqib_sohail_cv_compressed.pdf
 # See README for how to configure your own.
 # ============================================================================
 personal-data.tex
+personal-data-frontend.tex
 saqib.png
 saqibfull.png
 signature.png
