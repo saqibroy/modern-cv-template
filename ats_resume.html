@@ -40,6 +40,17 @@
     .title {
       font-weight: 700;
     }
+    .header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .photo {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
     .entry {
       margin-top: 8px;
     }
@@ -58,17 +69,22 @@
   </style>
 </head>
 <body>
-  <h1>Saqib Sohail</h1>
-  <p class="title">Full-Stack Engineer</p>
-  <p>Berlin, Germany</p>
-  <p>Phone: +49 1522 6550321</p>
-  <p>Email: <a href="mailto:saqib@ssohail.com">saqib@ssohail.com</a></p>
-  <p>Website: ssohail.com</p>
-  <p>LinkedIn: linkedin.com/in/saqibroy</p>
-  <p>GitHub: github.com/saqibroy</p>
+  <div class="header">
+    <div>
+      <h1>Saqib Sohail</h1>
+      <p class="title">Full-Stack Engineer</p>
+      <p>Berlin, Germany</p>
+      <p>Phone: +49 1522 6550321</p>
+      <p>Email: <a href="mailto:saqib@ssohail.com">saqib@ssohail.com</a></p>
+      <p>Website: ssohail.com</p>
+      <p>LinkedIn: linkedin.com/in/saqibroy</p>
+      <p>GitHub: github.com/saqibroy</p>
+    </div>
+    <img class="photo" src="profile-cv.jpg" alt="Saqib Sohail">
+  </div>
 
   <h2>Summary</h2>
-  <p>Full-Stack Engineer with 7+ years of experience building scalable web applications using React, Next.js, TypeScript, FastAPI, Django, Node.js, and PostgreSQL. Experienced in AI-assisted workflows, accessibility (WCAG 2.1), performance optimization, REST APIs, API integration, microservices, CI/CD, and system design.</p>
+  <p>Full-Stack Engineer with 7+ years of experience building scalable, production-grade web applications across NGO and product environments. Specialized in React, Next.js, and TypeScript, with backend expertise in Django, Ruby on Rails, and FastAPI. Experienced in developing AI-powered features using LLMs, RAG pipelines, and agentic workflows.</p>
 
   <h2>Skills</h2>
   <p><strong>Frontend:</strong> React.js, Next.js, Vue.js, Nuxt.js, TypeScript, JavaScript, Tailwind CSS, Semantic HTML, Responsive Design, WCAG 2.1</p>

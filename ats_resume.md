@@ -11,7 +11,7 @@ GitHub: https://github.com/saqibroy
 
 ## Summary
 
-Full-Stack Engineer with 7+ years of experience building scalable web applications using React, Next.js, TypeScript, FastAPI, Django, Node.js, and PostgreSQL. Experienced in AI-assisted workflows, accessibility (WCAG 2.1), performance optimization, REST APIs, API integration, microservices, CI/CD, and system design.
+Full-Stack Engineer with 7+ years of experience building scalable, production-grade web applications across NGO and product environments. Specialized in React, Next.js, and TypeScript, with backend expertise in Django, Ruby on Rails, and FastAPI. Experienced in developing AI-powered features using LLMs, RAG pipelines, and agentic workflows.
 
 ## Skills
 
