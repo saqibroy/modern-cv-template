@@ -19,7 +19,7 @@ Frontend: React.js, Next.js, Vue.js, Nuxt.js, TypeScript, JavaScript, Tailwind C
 
 Backend: Node.js, FastAPI, Django, Python, Ruby on Rails, Symfony, PHP, GraphQL, REST APIs, API Integration, Microservices, System Design
 
-AI and Data: LangChain, Agentic Workflows, RAG Pipelines, Vector Databases, Google Gemini, PostgreSQL, MySQL, MongoDB
+AI and Data: LangChain, LLM, RAG Pipelines, Vector Databases, Agentic Workflows, PostgreSQL, MySQL, MongoDB
 
 DevOps and Testing: Docker, GitLab CI/CD, GitHub Actions, Jest, Vitest, RSpec, PHPUnit, Lighthouse
 
@@ -27,10 +27,10 @@ DevOps and Testing: Docker, GitLab CI/CD, GitHub Actions, Jest, Vitest, RSpec, P
 
 Senior Full-Stack Engineer, Velsa Technologies, Berlin
 08/2025 - Present
-Tech Stack: React.js, FastAPI, Python, Django, Google Gemini, Stripe
+Tech Stack: React.js, FastAPI, Python, Django, LLM, RAG, Stripe
 - Architected a headless contract editor in React with merge fields, inline option toolbars, and toggleable conditional clauses.
 - Built a conversational chatbot wizard for contract creation using structured questions, API-backed templates, and automated document population.
-- Designed and deployed a FastAPI microservice for AI inference using a multi-chain LLM pipeline, Google Gemini, and vector database retrieval (RAG).
+- Designed and deployed a FastAPI microservice for AI inference using a multi-chain LLM pipeline with vector database retrieval (RAG).
 - Integrated Stripe payment flows and webhook handling for contract purchase and download gating.
 
 Front-End Developer, Tactical Tech (NGO), Berlin, Remote
