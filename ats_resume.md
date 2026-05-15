@@ -107,5 +107,5 @@ Organized welcome events for 100+ new students and coordinated sports events inc
 ## Languages
 
 English: Fluent
-German: Basic
+German: B1 Certificate
 Urdu/Panjabi: Native
