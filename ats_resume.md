@@ -1,6 +1,6 @@
 # Saqib Sohail
 
-Full-Stack Engineer
+Senior Full-Stack Engineer
 
 Berlin, Germany
 Phone: +49 1522 6550321
@@ -11,36 +11,38 @@ GitHub: https://github.com/saqibroy
 
 ## Summary
 
-Full-Stack Engineer with 7+ years of experience building scalable, production-grade web applications across NGO and product environments. Specialized in React, Next.js, and TypeScript, with backend expertise in Django, Ruby on Rails, and FastAPI. Experienced in developing AI-powered features using LLMs, RAG pipelines, and agentic workflows.
+Senior frontend-leaning full-stack engineer with 8+ years of experience delivering production web applications across civic-tech, nonprofit and early-stage product environments. Deep expertise in React, Next.js and TypeScript, with hands-on backend experience in Django, FastAPI, Node.js and Ruby on Rails. Experienced in modernising legacy systems, improving accessibility and performance, and owning AI-assisted product features from interface and API design through deployment.
 
-## Skills
+## Core Expertise
 
-Frontend: React.js, Next.js, Vue.js, Nuxt.js, TypeScript, JavaScript, Tailwind CSS, Semantic HTML, Responsive Design, WCAG 2.1
+Frontend: React, Next.js, TypeScript, JavaScript, Vue.js, Nuxt.js, HTML, CSS, Tailwind CSS
 
-Backend: Node.js, FastAPI, Django, Python, Ruby on Rails, Symfony, PHP, GraphQL, REST APIs, API Integration, Microservices, System Design
+Backend: Python, Django, FastAPI, Node.js, Ruby on Rails, REST APIs, GraphQL
 
-AI and Data: LangChain, LLM, RAG Pipelines, Vector Databases, Agentic Workflows, PostgreSQL, MySQL, MongoDB
+Data and applied AI: PostgreSQL, MySQL, MongoDB, vector databases, RAG, LLM integration
 
-DevOps and Testing: Docker, GitLab CI/CD, GitHub Actions, Jest, Vitest, RSpec, PHPUnit, Lighthouse
+Quality and delivery: Jest, Vitest, RSpec, PHPUnit, Docker, GitLab CI/CD, GitHub Actions
 
 ## Experience
 
 Senior Full-Stack Engineer, Velsa Technologies, Berlin
-08/2025 - Present
+08/2025 - 05/2026
 Tech Stack: React.js, FastAPI, Python, Django, LLM, RAG, Stripe
-- Architected a headless contract editor in React with merge fields, inline option toolbars, and toggleable conditional clauses.
-- Built a conversational chatbot wizard for contract creation using structured questions, API-backed templates, and automated document population.
-- Designed and deployed a FastAPI microservice for AI inference using a multi-chain LLM pipeline with vector database retrieval (RAG).
-- Integrated Stripe payment flows and webhook handling for contract purchase and download gating.
+- Owned end-to-end delivery of an AI-assisted contract product spanning the React/TypeScript frontend, Django application backend, FastAPI AI service and production integration.
+- Built a browser-based contract editor supporting merge fields, inline option controls and conditional clauses.
+- Developed a conversational workflow that collected structured user input and populated contract content through backend APIs.
+- Designed and deployed a FastAPI service integrating LLM inference and vector retrieval with the existing Django platform.
+- Integrated Stripe payment and webhook flows for contract purchasing and controlled document access.
 
 Front-End Developer, Tactical Tech (NGO), Berlin, Remote
 08/2019 - 04/2025
 Tech Stack: React.js, Vue.js, Next.js, Nuxt.js, TypeScript, WCAG 2.1
+- Owned frontend development and modernisation across 5+ international digital-rights applications, contributing to planning meetings, architecture decisions and delivery across varied technology stacks.
+- Defined the frontend architecture for new products and diagnosed architectural bottlenecks in existing systems, including a CMS performance issue affecting editorial teams.
 - Migrated 3 legacy applications to Next.js and Nuxt.js, reducing initial load times by 30 percent through code splitting and lazy loading.
-- Achieved WCAG 2.1 AA compliance across 5+ applications using semantic HTML, ARIA roles, keyboard navigation, and Lighthouse audits.
-- Implemented structured data, semantic HTML, and metadata strategies to improve organic search visibility.
-- Built responsive user interfaces with Tailwind CSS and Tachyons CSS across multiple public-facing projects.
-- Refactored Decap CMS schema architecture, reducing query overhead and editorial workflow time by more than 50 percent.
+- Drove WCAG 2.1 AA improvements across 5+ applications through semantic structure, keyboard navigation, ARIA usage and accessibility audits.
+- Refactored the Decap CMS content architecture, reducing editorial workflow time by more than 50 percent.
+- Collaborated with researchers, designers, product owners and non-technical editorial teams to translate complex requirements into maintainable product features.
 
 Full-Stack Developer (Working Student), Durch die Stadt GmbH, Berlin
 06/2018 - 08/2019
@@ -60,37 +62,20 @@ Ruby on Rails Developer (Freelance), Octasolutions, Gujranwala
 Tech Stack: Ruby on Rails, MySQL, JavaScript, Bootstrap
 - Built full-stack web applications with admin dashboards, role-based authentication, and responsive frontends.
 
-## Projects
-
-Headless Contract Editor, Velsa Technologies
-Built a document editor with dynamic merge fields and conditional clauses, integrated with an LLM pipeline to automate contract generation and reduce manual drafting work.
-
-AI Chatbot Platform, Velsa Technologies
-Architected a multi-chain LLM pipeline with self-correction loops, vector database retrieval, and a FastAPI microservice layer integrated into a Django backend.
-
-JAMstack Platform, Tactical Tech
-Developed and maintained JAMstack architecture with Next.js, Node.js, and Decap CMS for editorial workflows across multiple projects.
-
-GDPR Consent Manager, Tactical Tech
-Designed and integrated a centralized consent management system across 5+ web applications for cross-product GDPR compliance.
-
 ## Open Source Projects
-
-Web Crawler Dashboard: https://github.com/saqibroy/web-crawler-dashboard
-React, Go, Docker; URL analyzer with broken-link detection, heading analysis, login-form detection, real-time crawl status, and JWT authentication.
 
 Jobs Tracker Bot: https://github.com/saqibroy/jobs-tracker-bot
 Python, GitHub Actions, Docker; async aggregator monitoring 11 remote job boards with NGO role classification and Discord/Telegram alerts.
 
-Einbuerger Coach: https://github.com/saqibroy/german-citizenship-test-trainer
-React, Firestore; citizenship test prep app covering 310 questions with spaced repetition and achievement badges.
+Web Crawler Dashboard: https://github.com/saqibroy/web-crawler-dashboard
+React, Go, Docker; URL analyzer with broken-link detection, heading analysis, login-form detection, real-time crawl status, and JWT authentication.
 
 Accessibility Microservice: https://github.com/saqibroy/accessibility-check-microservice
 Node.js, JSDOM; lightweight WCAG 2.1 A/AA scanner for static HTML and AI-enriched accessibility reports.
 
 ## Education
 
-M.Sc. Computer Science (Coursework), Technische Universitaet Berlin, Berlin, Germany
+Graduate coursework in Computer Science, Technische Universitaet Berlin, Berlin, Germany
 04/2017 - 12/2020
 Coursework: Machine Learning, Database Systems, Computer Graphics, Advanced Web Development
 
@@ -106,6 +91,6 @@ Organized welcome events for 100+ new students and coordinated sports events inc
 
 ## Languages
 
-English: Fluent
-German: B1 Certificate
-Urdu/Panjabi: Native
+English: Professional working proficiency
+German: B1 certified
+Urdu and Punjabi: Native

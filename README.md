@@ -9,7 +9,9 @@ A clean, professional, and **ATS-optimized** CV/resume template built with [mode
 
 - **ATS-Friendly** — Clean text extraction, embedded fonts, rich PDF metadata keywords
 - **Contemporary Style** — Gradient header with circular photo, vertical timeline for experience
-- **Two PDF outputs** — HD quality for sharing + compressed version (<1MB) for upload portals
+- **Role-specific variants** — Senior Full-Stack and Senior Frontend versions
+- **Plain ATS outputs** — One-column, photo-free PDFs plus an editable DOCX
+- **Designed PDF outputs** — HD quality for sharing + compressed versions (<1MB)
 - **Privacy-safe** — Personal data (`phone`, `email`, `photo`) lives in a git-ignored file
 - **Professional spacing** — Tuned margins, bullet spacing, and section gaps
 - **Cerulean color scheme** — Professional blue-teal palette (easily changeable)
@@ -65,6 +67,12 @@ make compressed
 
 # Build both versions at once
 make both
+
+# Build plain one-column ATS PDFs and DOCX
+make ats
+
+# Build all full-stack, frontend, and ATS variants
+make all-variants
 
 # Auto-rebuild on file changes
 make watch
@@ -175,6 +183,10 @@ This template follows ATS best practices:
 |------|---------|-------------|----------|
 | `saqib_sohail_cv.pdf` | HD (full quality) | 2–5 MB | Email, direct sharing |
 | `saqib_sohail_cv_compressed.pdf` | Good (150 DPI) | < 1 MB | Job portals, LinkedIn |
+| `saqib_sohail_cv_frontend.pdf` | HD (full quality) | 2–5 MB | Frontend applications |
+| `saqib_sohail_cv_ats.pdf` | Plain, one column | < 1 MB | ATS job portals |
+| `saqib_sohail_cv_frontend_ats.pdf` | Plain, one column | < 1 MB | Frontend ATS applications |
+| `ats_resume.docx` | Editable ATS version | Small | Portals requiring Word |
 
 ## 🔒 Privacy
 

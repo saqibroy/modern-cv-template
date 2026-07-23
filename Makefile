@@ -22,6 +22,13 @@ TEX_FE      = template-frontend
 OUT_FE_HD   = saqib_sohail_cv_frontend.pdf
 OUT_FE_COMP = saqib_sohail_cv_frontend_compressed.pdf
 
+# Plain one-column ATS variants
+TEX_ATS     = ats_resume
+TEX_ATS_FE  = ats_resume_frontend
+OUT_ATS     = saqib_sohail_cv_ats.pdf
+OUT_ATS_FE  = saqib_sohail_cv_frontend_ats.pdf
+OUT_ATS_DOCX = ats_resume.docx
+
 # LaTeX engine & flags
 LATEXMK  = latexmk
 LMKFLAGS = -pdf -interaction=nonstopmode -halt-on-error
@@ -42,7 +49,7 @@ GS_FLAGS = -sDEVICE=pdfwrite \
            -dDownsampleGrayImages=false \
            -dDownsampleMonoImages=false
 
-.PHONY: all hd compressed both frontend frontend-hd frontend-compressed all-variants clean watch help
+.PHONY: all hd compressed both frontend frontend-hd frontend-compressed ats all-variants clean watch help
 
 all: hd
 
@@ -53,6 +60,7 @@ help:
 	@echo "  make compressed   - Build compressed full-stack PDF"
 	@echo "  make both         - Build both full-stack versions"
 	@echo "  make frontend     - Build HD + compressed front-end variant"
+	@echo "  make ats          - Build plain one-column ATS PDFs and DOCX"
 	@echo "  make all-variants - Build all variants"
 	@echo "  make clean        - Remove build artifacts"
 	@echo "  make watch        - Auto-rebuild on changes"
@@ -98,15 +106,33 @@ frontend: frontend-hd frontend-compressed
 	@echo "📋 Front-end Summary:"
 	@ls -lh $(OUT_FE_HD) $(OUT_FE_COMP) | awk '{print "   " $$9 ": " $$5}'
 
-all-variants: both frontend
+ats: $(OUT_ATS) $(OUT_ATS_FE) $(OUT_ATS_DOCX)
+	@echo ""
+	@echo "📋 ATS Summary:"
+	@ls -lh $(OUT_ATS) $(OUT_ATS_FE) $(OUT_ATS_DOCX) | awk '{print "   " $$9 ": " $$5}'
+
+$(OUT_ATS): $(TEX_ATS).tex
+	$(LATEXMK) $(LMKFLAGS) $(TEX_ATS).tex
+	@cp $(TEX_ATS).pdf $(OUT_ATS)
+
+$(OUT_ATS_FE): $(TEX_ATS_FE).tex $(TEX_ATS).tex
+	$(LATEXMK) $(LMKFLAGS) $(TEX_ATS_FE).tex
+	@cp $(TEX_ATS_FE).pdf $(OUT_ATS_FE)
+
+$(OUT_ATS_DOCX): ats_resume.md scripts/md2docx.py
+	python3 scripts/md2docx.py ats_resume.md $(OUT_ATS_DOCX)
+
+all-variants: both frontend ats
 	@echo ""
 	@echo "📋 All Variants:"
-	@ls -lh $(OUT_HD) $(OUT_COMP) $(OUT_FE_HD) $(OUT_FE_COMP) | awk '{print "   " $$9 ": " $$5}'
+	@ls -lh $(OUT_HD) $(OUT_COMP) $(OUT_FE_HD) $(OUT_FE_COMP) $(OUT_ATS) $(OUT_ATS_FE) $(OUT_ATS_DOCX) | awk '{print "   " $$9 ": " $$5}'
 
 clean:
 	$(LATEXMK) -C $(TEX).tex
 	$(LATEXMK) -C $(TEX_FE).tex 2>/dev/null || true
-	@rm -f $(OUT_HD) $(OUT_COMP) $(OUT_FE_HD) $(OUT_FE_COMP)
+	$(LATEXMK) -C $(TEX_ATS).tex 2>/dev/null || true
+	$(LATEXMK) -C $(TEX_ATS_FE).tex 2>/dev/null || true
+	@rm -f $(OUT_HD) $(OUT_COMP) $(OUT_FE_HD) $(OUT_FE_COMP) $(OUT_ATS) $(OUT_ATS_FE)
 	@rm -f $(TEX).pdf $(TEX_FE).pdf
 	@rm -f *.aux *.log *.out *.fls *.fdb_latexmk *.synctex.gz *.bbl *.blg *.bcf *.run.xml
 	@echo "🧹 Cleaned all build artifacts."
