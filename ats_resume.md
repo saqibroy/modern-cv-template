@@ -37,11 +37,10 @@ Tech Stack: React.js, FastAPI, Python, Django, LLM, RAG, Stripe
 Front-End Developer, Tactical Tech (NGO), Berlin, Remote
 08/2019 - 04/2025
 Tech Stack: React.js, Vue.js, Next.js, Nuxt.js, TypeScript, WCAG 2.1
-- Owned frontend development and modernisation across a portfolio of international digital-rights applications, contributing to planning meetings, architecture decisions and delivery across varied technology stacks.
-- Defined the frontend architecture for new products and resolved a Decap CMS content-architecture bottleneck, reducing editorial workflow time by more than 50 percent.
+- Owned frontend development and modernisation across 5+ international digital-rights applications.
+- Defined the frontend architecture for new products and resolved a Decap CMS bottleneck, reducing editorial workflow time by more than 50 percent.
 - Migrated 3 legacy applications to Next.js and Nuxt.js, reducing initial load times by 30 percent through code splitting and lazy loading.
-- Drove WCAG 2.1 AA improvements across 5+ applications through semantic structure, keyboard navigation, ARIA usage and accessibility audits.
-- Collaborated with researchers, designers, product owners and non-technical editorial teams to translate complex requirements into maintainable product features.
+- Collaborated with product, design, research and editorial teams on planning, technical decisions and WCAG 2.1 AA improvements.
 
 Full-Stack Developer (Working Student), Durch die Stadt GmbH, Berlin
 06/2018 - 08/2019
