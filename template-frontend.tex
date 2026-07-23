@@ -41,7 +41,7 @@
 % --- ATS: enhance PDF metadata with job-relevant keywords ---
 \AtEndPreamble{%
   \hypersetup{%
-    pdfkeywords={Saqib Sohail, Front-End Engineer, Frontend Developer, React.js, Next.js,
+    pdfkeywords={Saqib Sohail, Senior Frontend Engineer, Frontend Developer, React.js, Next.js,
       Vue.js, Nuxt.js, TypeScript, JavaScript, Tailwind CSS, WCAG, Accessibility,
       Node.js, GraphQL, REST APIs, curriculum vitae, resume}%
   }%
@@ -67,36 +67,36 @@
 \makecvtitle
 
 \section{Summary}
-\cvitem{}{Full-Stack Engineer with 7+ years of experience building scalable, production-grade web applications across NGO and product environments. Specialized in React, Next.js, and TypeScript, with backend expertise in Django, Ruby on Rails, and FastAPI. Experienced in developing AI-powered features using LLMs, RAG pipelines, and agentic workflows.}
+\cvitem{}{Senior frontend engineer with 8+ years of experience delivering and modernising production web applications across civic-tech, nonprofit, and early-stage product environments. Deep expertise in React, Next.js, TypeScript, accessibility, and web performance, backed by hands-on experience with Django, FastAPI, Node.js, and Ruby on Rails. Experienced in owning frontend architecture and collaborating across product, design, research, and editorial teams.}
 
-\section{Skills}
-\cvitem{Front-end}{\textbf{Proficient:} React.js, Next.js, Vue.js, Nuxt.js, TypeScript, Tailwind CSS}
-\cvitem{Back-end}{\textbf{Proficient:} Node.js, FastAPI, Django, Ruby on Rails, Symfony, GraphQL}
-\cvitem{AI}{\textbf{Competent:} LangChain, Agentic Workflows, RAG Pipelines}
-\cvitem{Databases}{\textbf{Proficient:} PostgreSQL, MySQL, MongoDB, Vector DBs}
-\cvitem{DevOps / QA}{\textbf{Competent:} Jest, Vitest, RSpec, PHPUnit, Docker, GitLab CI/CD}
+\section{Core Expertise}
+\cvitem{Frontend}{React, Next.js, TypeScript, JavaScript, Vue.js, Nuxt.js, HTML, CSS, Tailwind CSS}
+\cvitem{Web quality}{WCAG 2.1, accessibility audits, responsive design, performance optimisation, semantic HTML}
+\cvitem{Backend}{Python, Django, FastAPI, Node.js, Ruby on Rails, REST APIs, GraphQL}
+\cvitem{Delivery}{Jest, Vitest, RSpec, PHPUnit, Docker, GitLab CI/CD, GitHub Actions}
 % Experience
 \section{Experience}
 
-\cventry{08/2025--Present}{Senior Full-Stack Engineer}{Velsa Technologies}{Berlin}{}{
+\cventry{08/2025--05/2026}{Senior Full-Stack Engineer}{Velsa Technologies}{Berlin}{}{
   \begin{itemize}
     \item \textbf{React.js • FastAPI • Python • Django • LLM • RAG • Stripe}
-    \item Architected a headless contract editor in React with merge fields, inline option toolbars, and toggleable conditional clauses
-    \item Built a conversational chatbot wizard that guides users through contract creation via structured Q\&A, auto-populating documents via API
-    \item Designed and deployed a FastAPI microservice for AI inference using a multi-chain LLM pipeline with vector database retrieval (RAG)
-    \item Integrated Stripe payment flows with webhook handling for contract purchase and download gating
-    \item Developed Django backend for user management, contract storage, and multi-service API orchestration
+    \item Owned end-to-end delivery of an AI-assisted contract product spanning the React/TypeScript frontend, Django application backend, FastAPI AI service, and production integration
+    \item Built a browser-based contract editor supporting merge fields, inline option controls, and conditional clauses
+    \item Developed a conversational workflow that collected structured user input and populated contract content through backend APIs
+    \item Designed and deployed a FastAPI service integrating LLM inference and vector retrieval with the existing Django platform
+    \item Integrated Stripe payment and webhook flows for contract purchasing and controlled document access
   \end{itemize}
 }
 
 \cventry{08/2019--04/2025}{Front-End Developer}{Tactical Tech (NGO)}{Berlin (Remote)}{}{
   \begin{itemize}
     \item \textbf{React.js • Vue.js • Next.js • Nuxt.js • TypeScript • WCAG 2.1}
+    \item Owned frontend development and modernisation across 5+ international digital-rights applications, contributing to planning meetings, architecture decisions, and delivery across varied technology stacks
+    \item Defined the frontend architecture for new products and diagnosed architectural bottlenecks in existing systems, including a CMS performance issue affecting editorial teams
     \item Migrated 3 legacy applications to Next.js and Nuxt.js, reducing initial load times by 30\% through code splitting and lazy loading
-    \item Achieved WCAG 2.1 AA compliance across 5+ applications using ARIA roles, keyboard navigation, and Lighthouse audits
-    \item Implemented structured data, semantic HTML, and meta tag strategies that increased organic search traffic
-    \item Designed pixel-perfect responsive UIs using Tailwind CSS and Tachyons CSS across multiple projects
-    \item Refactored Decap CMS schema architecture, eliminating query overhead and reducing editorial workflow time by 50\%+
+    \item Drove WCAG 2.1 AA improvements across 5+ applications through semantic structure, keyboard navigation, ARIA usage, and accessibility audits
+    \item Refactored the Decap CMS content architecture, reducing editorial workflow time by more than 50\%
+    \item Collaborated with researchers, designers, product owners, and non-technical editorial teams to translate complex requirements into maintainable product features
   \end{itemize}
 }
 
@@ -125,42 +125,22 @@
   \end{itemize}
 }
 
-\section{Key Projects}
-
-\cventry{}{Headless Contract Editor}{Velsa Technologies}{React, FastAPI, LLM}{}{
-  Built a document editor with dynamic merge fields and conditional clauses, integrated with an LLM pipeline to automate contract generation and reduce manual drafting time}
-
-\cventry{}{AI Chatbot Platform}{Velsa Technologies}{LangChain, RAG, Django}{}{
-  Architected a multi-chain agentic LLM pipeline with self-correction loops, vector DB retrieval, and a FastAPI microservice layer integrated into an existing Django backend}
-
-\cventry{}{JAMstack Platform}{Tactical Tech}{Next.js, Node.js, Decap CMS}{}{
-  Developed and maintained JAMstack architecture across multiple projects, using Decap CMS and a custom Node.js API to power React frontends with non-technical editor workflows}
-
-\cventry{}{GDPR Consent Manager}{Tactical Tech}{Next.js}{}{
-  Designed and integrated a centralised consent management system across 5+ web applications, ensuring cross-product GDPR compliance}
-
 \section{Open-Source}
-
-\cventry{}{Web Crawler Dashboard}{\href{https://github.com/saqibroy/web-crawler-dashboard}{github.com/saqibroy/web-crawler-dashboard}}{React, Go, Docker}{}{
-  Full-stack URL analyser with a Go/Gin backend and React dashboard that detects broken links, heading structure, and login forms with real-time crawl status and JWT auth}
 
 \cventry{}{Jobs Tracker Bot}{\href{https://github.com/saqibroy/jobs-tracker-bot}{github.com/saqibroy/jobs-tracker-bot}}{Python, GitHub Actions, Docker}{}{
   Async aggregator that monitors 11 remote job boards, classifies NGO roles, and sends rich Discord/Telegram alerts, with CI/CD deployment to Oracle Cloud}
 
-\cventry{}{Einbürger Coach}{\href{https://github.com/saqibroy/german-citizenship-test-trainer}{github.com/saqibroy/german-citizenship-test-trainer}}{React, Firestore}{}{
-  Live citizenship test prep app at einbuergercoach.de that covers 310 questions with spaced repetition and achievement badges}
-
-\cventry{}{German B1 Trainer}{\href{https://github.com/saqibroy/trainer}{github.com/saqibroy/trainer}}{React, TypeScript, Tailwind CSS}{}{
-  Exam prep tool that offers 7 exercise types with spaced repetition across 4 mastery levels and configurable practice sessions}
+\cventry{}{Web Crawler Dashboard}{\href{https://github.com/saqibroy/web-crawler-dashboard}{github.com/saqibroy/web-crawler-dashboard}}{React, Go, Docker}{}{
+  Full-stack URL analyser with a Go/Gin backend and React dashboard that detects broken links, heading structure, and login forms with real-time crawl status and JWT auth}
 
 \cventry{}{Accessibility Microservice}{\href{https://github.com/saqibroy/accessibility-check-microservice}{github.com/saqibroy/accessibility-check-microservice}}{Node.js, JSDOM}{}{
   Lightweight WCAG 2.1 A/AA scanner that audits static HTML without a headless browser, powering AI-enriched accessibility reports}
 
-% Portfolio (removed — content duplicated in Key Projects and Open-Source sections)
+% Portfolio removed; professional experience and selected open-source work carry the evidence.
 
 \section{Education}
 
-\cventry{04/2017--12/2020}{M.Sc. Computer Science (Coursework)}{Technische Universität Berlin}{Berlin, Germany}{}{Machine Learning, Database Systems, Computer Graphics (Three.js/WebGL), Advanced Web Development}
+\cventry{04/2017--12/2020}{Graduate coursework in Computer Science}{Technische Universität Berlin}{Berlin, Germany}{}{Machine Learning, Database Systems, Computer Graphics, Advanced Web Development}
 \cventry{09/2011--10/2015}{B.Sc. Computer Science}{GIFT University}{Gujranwala, Pakistan}{}{OOP, Data Structures, Database Systems, Web Programming, Software Engineering}
 
 % Volunteer & Leadership
@@ -170,8 +150,8 @@
 
 % Languages
 \section{Languages}
-\cvitemwithcomment{English}{Fluent}{}
-\cvitemwithcomment{German}{B1 Certificate}{}
-\cvitemwithcomment{Urdu/Panjabi}{Native}{}
+\cvitemwithcomment{English}{Professional working proficiency}{}
+\cvitemwithcomment{German}{B1 certified}{}
+\cvitemwithcomment{Urdu, Punjabi}{Native}{}
 
 \end{document}
