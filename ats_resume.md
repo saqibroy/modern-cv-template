@@ -21,7 +21,7 @@ Backend: Python, Django, FastAPI, Node.js, Ruby on Rails, REST APIs
 
 Data and applied AI: PostgreSQL, MySQL, vector databases, RAG, LLM integration
 
-System design and delivery: application architecture, frontend architecture, API design, service integration, Docker, CI/CD, automated testing
+System design and delivery: application architecture, API design, service integration, CI/CD, automated testing
 
 ## Experience
 
