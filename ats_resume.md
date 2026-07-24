@@ -11,7 +11,7 @@ GitHub: https://github.com/saqibroy
 
 ## Summary
 
-Senior frontend-leaning full-stack engineer with 8+ years of experience delivering production web applications across civic-tech, nonprofit and early-stage product environments. Deep expertise in React, Next.js and TypeScript, with hands-on backend experience in Django, FastAPI, Node.js and Ruby on Rails. Experienced in designing application flows and integrations across frontend, backend and AI services, modernising legacy systems, and improving accessibility and performance.
+Senior frontend-leaning full-stack engineer with 8+ years of experience delivering production web applications across civic-tech, nonprofit and early-stage product environments. Deep expertise in React, Next.js and TypeScript, with hands-on backend experience in Django, FastAPI, Node.js and Ruby on Rails. Experienced in application-level system design, service integration, legacy modernisation, accessibility and performance.
 
 ## Core Expertise
 
@@ -21,14 +21,14 @@ Backend: Python, Django, FastAPI, Node.js, Ruby on Rails, REST APIs
 
 Data and applied AI: PostgreSQL, MySQL, vector databases, RAG, LLM integration
 
-Architecture and delivery: application architecture, frontend architecture, API design, service integration, Docker, CI/CD, automated testing
+System design and delivery: application architecture, frontend architecture, API design, service integration, Docker, CI/CD, automated testing
 
 ## Experience
 
 Senior Full-Stack Engineer, Velsa Technologies, Berlin
 08/2025 - 05/2026
 Tech Stack: React.js, FastAPI, Python, Django, LLM, RAG, Stripe
-- Designed the application flow and service integration for an AI-assisted contract workflow connecting a React/TypeScript editor, Django backend and FastAPI AI service.
+- Designed the application architecture and integration flow for an AI-assisted contract workflow connecting a React/TypeScript editor, Django backend and FastAPI AI service.
 - Owned end-to-end delivery across the editor, application backend, AI service and production integration.
 - Built a browser-based contract editor supporting merge fields, inline option controls and conditional clauses.
 - Developed a conversational workflow that collected structured input and populated contract content through backend APIs.
@@ -38,10 +38,10 @@ Tech Stack: React.js, FastAPI, Python, Django, LLM, RAG, Stripe
 Front-End Developer, Tactical Tech (NGO), Berlin, Remote
 08/2019 - 04/2025
 Tech Stack: React.js, Vue.js, Next.js, Nuxt.js, TypeScript, WCAG 2.1
-- Owned frontend delivery and modernisation decisions across 5+ public-facing platforms used by international audiences, researchers, educators and civil-society organisations.
+- Owned frontend architecture, delivery and modernisation decisions across 5+ public-facing platforms used by international audiences, researchers, educators and civil-society organisations.
 - Migrated 3 legacy applications to Next.js and Nuxt.js, reducing initial load times by 30% through code splitting, lazy loading and frontend optimisation.
 - Refactored the Decap CMS content architecture, reducing editorial workflow time by more than 50% and improving maintainability for non-technical content teams.
-- Partnered with product, design, research and editorial teams to translate complex research and educational content into accessible, maintainable web experiences, contributing to WCAG 2.1 AA compliance.
+- Partnered with product, design, research and editorial teams to translate complex requirements into accessible, maintainable frontend systems, contributing to WCAG 2.1 AA compliance.
 
 Full-Stack Developer (Working Student), Durch die Stadt GmbH, Berlin
 06/2018 - 08/2019
