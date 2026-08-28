@@ -10,12 +10,14 @@
 \usepackage[hmargin=0.58in,top=0.42in,bottom=0.48in]{geometry}
 \usepackage{graphicx}
 \usepackage{enumitem}
+\usepackage{needspace}
 \usepackage{titlesec}
 \usepackage{xcolor}
 
 \renewcommand{\familydefault}{\sfdefault}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{2pt}
+\setlength{\emergencystretch}{3em}
 \pagenumbering{gobble}
 \urlstyle{same}
 
@@ -33,6 +35,7 @@
 }
 
 \newcommand{\entry}[4]{%
+  \Needspace{7\baselineskip}%
   \textbf{#1}, #2\par
   #3\par
   \textit{Tech Stack: #4}\par
@@ -52,11 +55,17 @@
 
 \begin{document}
 
+\iffrontendcv
+  \hypersetup{pdftitle={Saqib Sohail - Senior Frontend Engineer}}
+\else
+  \hypersetup{pdftitle={Saqib Sohail - Senior Software Engineer}}
+\fi
+
 {\LARGE\textbf{Saqib Sohail}}\par
 \iffrontendcv
   \textbf{Senior Frontend Engineer}\par
 \else
-  \textbf{Senior Full-Stack Engineer}\par
+  \textbf{Senior Software Engineer}\par
 \fi
 Berlin, Germany\par
 Phone: +49 1522 6550321\par
@@ -67,9 +76,9 @@ GitHub: github.com/saqibroy
 
 \section*{Summary}
 \iffrontendcv
-  Senior frontend-leaning full-stack engineer with 8+ years of experience delivering production web applications across civic-tech, nonprofit and early-stage product environments. Deep expertise in React, Next.js and TypeScript, with hands-on backend experience in Django, FastAPI, Node.js and Ruby on Rails. Experienced in designing application flows and integrations across frontend, backend and AI services, modernising legacy systems, and improving accessibility and performance.
+  Frontend-focused software engineer with 8+ years of experience delivering production web applications across nonprofit, \mbox{civic-tech} and early-stage product environments. Deep expertise in React, Next.js and TypeScript, with additional experience in Vue, Nuxt and backend development using Django, FastAPI, Node.js and Ruby on Rails. Experienced in translating requirements and Figma designs into accessible, responsive interfaces, owning frontend architecture and modernising legacy applications through production.
 \else
-  Senior frontend-leaning full-stack engineer with 8+ years of experience delivering production web applications across civic-tech, nonprofit and early-stage product environments. Deep expertise in React, Next.js and TypeScript, with hands-on backend experience in Django, FastAPI, Node.js and Ruby on Rails. Experienced in designing application flows and integrations across frontend, backend and AI services, modernising legacy systems, and improving accessibility and performance.
+  Senior frontend-leaning software engineer with 8+ years of experience delivering production web applications across nonprofit, \mbox{civic-tech} and early-stage product environments. Deep expertise in React, Next.js and TypeScript, with hands-on backend experience in Django, FastAPI, Node.js and Ruby on Rails. Experienced in taking products from requirements and architecture through implementation and production, modernising legacy systems, and improving accessibility and performance.
 \fi
 
 \section*{Core Expertise}
@@ -83,12 +92,12 @@ GitHub: github.com/saqibroy
 \iffrontendcv
 \textbf{Backend:} Python, Django, FastAPI, Node.js, Ruby on Rails, REST APIs\par
 \fi
-\textbf{Architecture and delivery:} application architecture, frontend architecture, API design, service integration, Docker, CI/CD, automated testing
+\textbf{Architecture and delivery:} application architecture, frontend architecture, API design, requirements engineering, service integration, code review, Docker, CI/CD, automated testing
 
 \section*{Experience}
 \entry{Senior Full-Stack Engineer}{Velsa Technologies, Berlin}{08/2025 - 05/2026}{React.js, FastAPI, Python, Django, LLM, RAG, Stripe}
 \begin{itemize}
-  \item Designed the application flow and service integration for an AI-assisted contract workflow connecting a React/TypeScript editor, Django backend and FastAPI AI service.
+  \item Designed the application architecture and integration flow for an AI-assisted contract workflow connecting a \mbox{React}/TypeScript editor, Django backend and FastAPI AI service.
   \item Owned end-to-end delivery across the editor, application backend, AI service and production integration.
   \item Built a browser-based contract editor supporting merge fields, inline option controls and conditional clauses.
   \item Developed a conversational workflow that collected structured input and populated contract content through backend APIs.
@@ -96,12 +105,13 @@ GitHub: github.com/saqibroy
   \item Integrated Stripe payment and webhook flows for contract purchasing and controlled document access.
 \end{itemize}
 
-\entry{Front-End Developer}{Tactical Tech (NGO), Berlin, Remote}{08/2019 - 04/2025}{React.js, Vue.js, Next.js, Nuxt.js, TypeScript, WCAG 2.1}
+\entry{Software Engineer / Web Developer}{Tactical Tech (NGO), Berlin, Remote}{08/2019 - 03/2025}{React.js, Vue.js, Next.js, Nuxt.js, TypeScript, WCAG 2.1}
 \begin{itemize}
-  \item Owned frontend delivery and modernisation decisions across 5+ public-facing platforms used by international audiences, researchers, educators and civil-society organisations.
-  \item Migrated 3 legacy applications to Next.js and Nuxt.js, reducing initial load times by 30\% through code splitting, lazy loading and frontend optimisation.
-  \item Refactored the Decap CMS content architecture, reducing editorial workflow time by more than 50\% and improving maintainability for non-technical content teams.
-  \item Partnered with product, design, research and editorial teams to translate complex research and educational content into accessible, maintainable web experiences, contributing to WCAG 2.1 AA compliance.
+  \item Led the technical modernisation of Exposing the Invisible (ETI), owning architecture and implementation decisions for its React-to-Vue and CMS migrations.
+  \item Modernised Tactical Tech's main website from React to Next.js and delivered Influence Industry from planning through deployment, alongside work on The Glass Room, Data Detox Kit, Everything Will Be Fine and Digital Enquirer.
+  \item Built and maintained reusable Content API and Search API services and consent-management functionality supporting GDPR-compliant workflows; improved CMS workflows and investigated issues across the application stack.
+  \item Worked with project managers, researchers, designers and editors to turn requirements and Figma designs into \mbox{implementation} plans and reusable, responsive, accessible components, from planning and architecture discussions through code review.
+  \item Improved performance, accessibility, maintainability and developer experience across production applications, including 30\% faster initial loads and more than 50\% faster editorial workflows.
 \end{itemize}
 
 \entry{Full-Stack Developer (Working Student)}{Durch die Stadt GmbH, Berlin}{06/2018 - 08/2019}{Ruby on Rails, Vue.js, Nuxt.js, PostgreSQL, Mapbox}
@@ -135,10 +145,15 @@ Coursework: Machine Learning, Database Systems, Computer Graphics, Advanced Web 
 09/2011 - 10/2015\par
 Coursework: OOP, Data Structures, Database Systems, Web Programming, Software Engineering
 
-\section*{Leadership Experience}
+\section*{Volunteer \& Leadership}
 \textbf{President}, Pakistan Student Association, Berlin, Germany\par
 09/2018 - 09/2019\par
 Organized welcome events for 100+ new students and coordinated sports events including cricket tournaments.
+
+\section*{Additional Training}
+\textbf{Community Basic Life Support \& Fire Safety Training} \textbar{} 09/2012\par
+Punjab Emergency Service (Rescue 1122), Gujranwala, Pakistan\par
+Completed a community orientation course in basic life support and fire safety.
 
 \section*{Languages}
 English: Professional working proficiency \textbar{} German: B1 certified \textbar{} Urdu and Punjabi: Native

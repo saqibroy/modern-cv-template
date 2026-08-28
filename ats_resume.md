@@ -1,6 +1,6 @@
 # Saqib Sohail
 
-Senior Full-Stack Engineer
+Senior Software Engineer
 
 Berlin, Germany
 Phone: +49 1522 6550321
@@ -11,7 +11,7 @@ GitHub: https://github.com/saqibroy
 
 ## Summary
 
-Senior frontend-leaning full-stack engineer with 8+ years of experience delivering production web applications across civic-tech, nonprofit and early-stage product environments. Deep expertise in React, Next.js and TypeScript, with hands-on backend experience in Django, FastAPI, Node.js and Ruby on Rails. Experienced in designing application flows and integrations across frontend, backend and AI services, modernising legacy systems, and improving accessibility and performance.
+Senior frontend-leaning software engineer with 8+ years of experience delivering production web applications across nonprofit, civic-tech and early-stage product environments. Deep expertise in React, Next.js and TypeScript, with hands-on backend experience in Django, FastAPI, Node.js and Ruby on Rails. Experienced in taking products from requirements and architecture through implementation and production, modernising legacy systems, and improving accessibility and performance.
 
 ## Core Expertise
 
@@ -21,27 +21,28 @@ Backend: Python, Django, FastAPI, Node.js, Ruby on Rails, REST APIs
 
 Data and applied AI: PostgreSQL, MySQL, vector databases, RAG, LLM integration
 
-Architecture and delivery: application architecture, frontend architecture, API design, service integration, Docker, CI/CD, automated testing
+Architecture and delivery: application architecture, frontend architecture, API design, requirements engineering, service integration, code review, Docker, CI/CD, automated testing
 
 ## Experience
 
 Senior Full-Stack Engineer, Velsa Technologies, Berlin
 08/2025 - 05/2026
 Tech Stack: React.js, FastAPI, Python, Django, LLM, RAG, Stripe
-- Designed the application flow and service integration for an AI-assisted contract workflow connecting a React/TypeScript editor, Django backend and FastAPI AI service.
+- Designed the application architecture and integration flow for an AI-assisted contract workflow connecting a React/TypeScript editor, Django backend and FastAPI AI service.
 - Owned end-to-end delivery across the editor, application backend, AI service and production integration.
 - Built a browser-based contract editor supporting merge fields, inline option controls and conditional clauses.
 - Developed a conversational workflow that collected structured input and populated contract content through backend APIs.
 - Designed and deployed a FastAPI service integrating LLM inference and vector retrieval with the existing Django platform.
 - Integrated Stripe payment and webhook flows for contract purchasing and controlled document access.
 
-Front-End Developer, Tactical Tech (NGO), Berlin, Remote
-08/2019 - 04/2025
+Software Engineer / Web Developer, Tactical Tech (NGO), Berlin, Remote
+08/2019 - 03/2025
 Tech Stack: React.js, Vue.js, Next.js, Nuxt.js, TypeScript, WCAG 2.1
-- Owned frontend delivery and modernisation decisions across 5+ public-facing platforms used by international audiences, researchers, educators and civil-society organisations.
-- Migrated 3 legacy applications to Next.js and Nuxt.js, reducing initial load times by 30% through code splitting, lazy loading and frontend optimisation.
-- Refactored the Decap CMS content architecture, reducing editorial workflow time by more than 50% and improving maintainability for non-technical content teams.
-- Partnered with product, design, research and editorial teams to translate complex research and educational content into accessible, maintainable web experiences, contributing to WCAG 2.1 AA compliance.
+- Led the technical modernisation of Exposing the Invisible (ETI), owning architecture and implementation decisions for its React-to-Vue and CMS migrations.
+- Modernised Tactical Tech's main website from React to Next.js and delivered Influence Industry from planning through deployment, alongside work on The Glass Room, Data Detox Kit, Everything Will Be Fine and Digital Enquirer.
+- Built and maintained reusable Content API and Search API services and consent-management functionality supporting GDPR-compliant workflows; improved CMS workflows and investigated issues across the application stack.
+- Worked with project managers, researchers, designers and editors to turn requirements and Figma designs into implementation plans and reusable, responsive, accessible components, from planning and architecture discussions through code review.
+- Improved performance, accessibility, maintainability and developer experience across production applications, including 30% faster initial loads and more than 50% faster editorial workflows.
 
 Full-Stack Developer (Working Student), Durch die Stadt GmbH, Berlin
 06/2018 - 08/2019
@@ -82,11 +83,16 @@ B.Sc. Computer Science, GIFT University, Gujranwala, Pakistan
 09/2011 - 10/2015
 Coursework: OOP, Data Structures, Database Systems, Web Programming, Software Engineering
 
-## Leadership Experience
+## Volunteer & Leadership
 
 President, Pakistan Student Association, Berlin, Germany
 09/2018 - 09/2019
 Organized welcome events for 100+ new students and coordinated sports events including cricket tournaments.
+
+## Additional Training
+
+Community Basic Life Support & Fire Safety Training, Punjab Emergency Service (Rescue 1122), Gujranwala, Pakistan | 09/2012
+Completed a community orientation course in basic life support and fire safety.
 
 ## Languages
 
